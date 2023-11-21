@@ -35,6 +35,4 @@ public class Person {
     @NotBlank(message = "Department cannot be blank")
     @Size(min = 2, max = 50, message = "Department must be between 2 and 50 characters")
     private String department;
-
-
 }

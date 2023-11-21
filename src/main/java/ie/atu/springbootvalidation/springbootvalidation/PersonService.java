@@ -11,6 +11,5 @@ public class PersonService {
     public Person getPersonByEmployeeId(String employeeId) {
         Person myPerson = new Person("Conor", "Mr", employeeId, 22, "g00391846@atu.ie", "intern", "Test services");
         return myPerson;
-
     }
 }
