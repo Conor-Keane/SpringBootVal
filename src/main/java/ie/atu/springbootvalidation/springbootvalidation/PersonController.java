@@ -29,9 +29,14 @@ public class PersonController {
         return ResponseEntity.ok(person);
     }
 
-    @PostMapping("/createPerson")
+    @PostMapping("createPerson")
     public ResponseEntity<String>create(@Valid @RequestBody Person person){
         personService.savePerson(person);
         return new ResponseEntity<>("Person created successfully", HttpStatus.OK);
+    }
+
+    @PostMapping("/savePerson")
+    public void savePerson(@Valid @RequestBody Person person) {
+        personService.savePerson(person);
     }
 }

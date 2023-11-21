@@ -9,7 +9,8 @@ public class PersonService {
     }
 
     public Person getPersonByEmployeeId(String employeeId) {
-        System.out.println("Person ID");
-        return null;
+        Person myPerson = new Person("Conor", "Mr", employeeId, 22, "g00391846@atu.ie", "intern", "Test services");
+        return myPerson;
+
     }
 }
